@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Explore the World</title>
+  
+  <subtitle>Jayliu</subtitle>
+  <link href="https://jayliu9218.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://jayliu9218.github.io/"/>
+  <updated>2023-10-30T14:40:48.536Z</updated>
+  <id>https://jayliu9218.github.io/</id>
+  
+  <author>
+    <name>Jayliu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>伪破解lisence expire问题</title>
+    <link href="https://jayliu9218.github.io/2023/10/30/%E4%BC%AA%E7%A0%B4%E8%A7%A3%20lisence%20expire%20%E9%97%AE%E9%A2%98/"/>
+    <id>https://jayliu9218.github.io/2023/10/30/%E4%BC%AA%E7%A0%B4%E8%A7%A3%20lisence%20expire%20%E9%97%AE%E9%A2%98/</id>
+    <published>2023-10-30T14:40:13.000Z</published>
+    <updated>2023-10-30T14:40:48.536Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个视频将介绍<code>Your lisence will expire</code>问题的解决方案，仅供学习交流。</p><p>该软件的基本加密思路是：在官方申请获得许可证，运行时联网校验许可证时间。</p><p>破解思路：</p><ol><li>修改许可证文件，失败</li></ol><p>简单修改之后无法正常打开程序，表示许可证错误</p><ol start="2"><li>修改系统时间，失败</li></ol><p>程序需要联网获取时间，关闭网络则无法打开程序</p><ol start="3"><li>使用<code>RunAsDate</code>程序指定运行时间，成功</li></ol><p>需要注意的是，Cycle Tempo是32位程序，所以需要对应下载32位的RunAsDate</p><p>指定为到期前任意一个时间即可，没有到期提示</p><p>同时还可以生成快捷方式，非常方便。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;这个视频将介绍&lt;code&gt;Your lisence will expire&lt;/code&gt;问题的解决方案，仅供学习交流。&lt;/p&gt;
+&lt;p&gt;该软件的基本加密思路是：在官方申请获得许可证，运行时联网校验许可证时间。&lt;/p&gt;
+&lt;p&gt;破解思路：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;修改许可证文件</summary>
+      
+    
+    
+    
+    
+    <category term="Cycle-Tempo" scheme="https://jayliu9218.github.io/tags/Cycle-Tempo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>导出 Cycle Tempo 运行结果为数据表</title>
+    <link href="https://jayliu9218.github.io/2023/10/30/%E5%AF%BC%E5%87%BA%20Cycle%20Tempo%20%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C%E4%B8%BA%E6%95%B0%E6%8D%AE%E8%A1%A8/"/>
+    <id>https://jayliu9218.github.io/2023/10/30/%E5%AF%BC%E5%87%BA%20Cycle%20Tempo%20%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C%E4%B8%BA%E6%95%B0%E6%8D%AE%E8%A1%A8/</id>
+    <published>2023-10-30T03:35:13.000Z</published>
+    <updated>2023-10-30T14:41:41.441Z</updated>
+    
+    <content type="html"><![CDATA[<p>将cycle tempo运行结果导出为数据表。</p><p>我在使用该软件时并没有发现能直接导出数据表的功能，但发现cycle tempo能在其内部生成运行数据，所以可以利用表格识别功能将其转为最终的数据表。</p><p>示例如下</p><ol><li><p>首先，打开工程，并且保证其能正常运行，否则无法得到数据。</p></li><li><p>之后，运行，再打开菜单栏中的“view”一栏，点击“New Table”</p></li><li><p>最上边是表头，可以不用管，中间是系统数据和需要显示的数据，最后是管道和需要显示的管道</p></li><li><p>一般管道就全选，数据的话按需选择，比如这里选择了质量流量，焓值，温度，压力等，这个是进出口的设置，一般也可以就选both，但其实一个设备的出口也会是另一个的入口，所以问题不大</p></li><li><p>生成数据表，并截图保存，将图片进行表格识别，（这里用到了“白描”，一个很好用的识别网站）</p></li><li><p>导出为xlxs等数据表格式进行分析</p></li></ol><p>比较发现，效果还是不错的，可以使用</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;将cycle tempo运行结果导出为数据表。&lt;/p&gt;
+&lt;p&gt;我在使用该软件时并没有发现能直接导出数据表的功能，但发现cycle tempo能在其内部生成运行数据，所以可以利用表格识别功能将其转为最终的数据表。&lt;/p&gt;
+&lt;p&gt;示例如下&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;首先，</summary>
+      
+    
+    
+    
+    
+    <category term="Cycle-Tempo" scheme="https://jayliu9218.github.io/tags/Cycle-Tempo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mail-Reminder-by-Transfer</title>
+    <link href="https://jayliu9218.github.io/2023/10/28/Mail-Reminder-by-Transfer/"/>
+    <id>https://jayliu9218.github.io/2023/10/28/Mail-Reminder-by-Transfer/</id>
+    <published>2023-10-28T12:57:48.000Z</published>
+    <updated>2023-11-01T04:13:54.065Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="能做什么？"><a href="#能做什么？" class="headerlink" title="能做什么？"></a>能做什么？</h1><ol><li>自动登录交大邮箱，由上一时刻保存的邮件数与此时刻的邮件数对比，判断有无新邮件；</li><li>如果“1”的结果为真，则解析最新邮件的主题，并转发至设置的 QQ 邮箱；</li><li>QQ 邮箱小程序会推送结果到微信与 QQ；</li><li>通过 github actions 实现上述过程的自动化，可以定时检测提醒。</li></ol><h1 id="如何使用？"><a href="#如何使用？" class="headerlink" title="如何使用？"></a>如何使用？</h1><ol><li><p>修改配置文件 <code>config.txt</code>：</p><ol><li><code>%%%</code> 替换成自己的；</li><li><code>encrypted</code> 的 <code>0</code> 表示未加密，不用修改；</li><li><code>pop3_server</code> 表示服务器地址，不用修改；</li></ol></li><li><p>下载 <code>requirements.txt</code> 中的依赖项， 运行 <code>main.py</code>；</p></li><li><p>注意：第一次运行为初始化，获取初始邮件数。</p></li></ol><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#x27;account&#x27;: &#x27;%%%@sjtu.edu.cn&#x27;, &#x27;password&#x27;: &#x27;%%%&#x27;, &#x27;receiver&#x27;: &#x27;%%%qq.com&#x27;, &#x27;pop3_server&#x27;: &#x27;mail.sjtu.edu.cn&#x27;, &#x27;encrypted&#x27;: 0&#125;</span><br></pre></td></tr></table></figure><h1 id="问题？"><a href="#问题？" class="headerlink" title="问题？"></a>问题？</h1><ol><li><p>安全性：</p><ol><li><p>问题：将密码直接输入，进行简单的加密，虽然保存的是密文，但可以通过程序倒推出密码明文，整体安全性不够；</p></li><li><p><strong>解决【unsolved】</strong>：使用 github 中的 TOKEN 作为密钥，即运行时每个用户拥有唯一的密钥；</p></li><li><p><strong>解决【solved】【2023-11-01】</strong>：在 github actions 的配置文件中设置环境变量，在 python 程序中设置接口；</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">env:</span></span><br><span class="line">  <span class="attr">GITHUB_TOKEN:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUB_TOKEN</span> <span class="string">&#125;&#125;</span></span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    GITHUB_TOKEN = os.environ[<span class="string">&#x27;GITHUB_TOKEN&#x27;</span>]</span><br><span class="line"><span class="keyword">except</span> KeyError:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;Please define the environment variable GITHUB_TOKEN&#x27;</span>)</span><br></pre></td></tr></table></figure><p>在上传 github 仓库时，需要保留密码明文进行初始化操作，此时有一定风险：可以直接获取 TOKEN 进行加密后再上传。</p><p>由于每个人的 TOKEN 不同，可以起到较好的保密效果。</p></li></ol></li><li><p>实用性：</p><ol><li>问题：只有最新邮件，提醒不到位；</li><li>解决：该程序仅作提醒，若要提醒多封邮件，可以更改 <code>main.py</code> 中的转发邮件部分，参照 <a href="https://developer.aliyun.com/article/903464#:~:text=%E7%BC%96%E7%A8%8B%20%7C%20%E8%AF%A6%E8%A7%A3%E4%BD%BF%E7%94%A8Python%E6%8E%A5%E6%94%B6%E9%82%AE%E4%BB%B6%201%201.%E5%9F%BA%E6%9C%AC%E6%AD%A5%E9%AA%A4%20%E8%BF%9E%E6%8E%A5%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%E3%80%82%20%E7%99%BB%E9%99%86%E3%80%82%20%E5%8F%91%E5%87%BA%E6%9C%8D%E5%8A%A1%E8%AF%B7%E6%B1%82%E3%80%82,3.%E8%A7%A3%E6%9E%90%E9%82%AE%E4%BB%B6%E4%B8%BB%E9%A2%98%20...%204%204.%E8%A7%A3%E6%9E%90%E9%82%AE%E4%BB%B6%E6%9D%A5%E6%BA%90%20...%205%205.%E8%A7%A3%E6%9E%90%E9%82%AE%E4%BB%B6%E5%86%85%E5%AE%B9%20">编程 | 详解使用Python接收邮件</a>；</li></ol></li></ol><h1 id="关于-github-actions-中的-config-yml"><a href="#关于-github-actions-中的-config-yml" class="headerlink" title="关于 github actions 中的 config.yml"></a>关于 github actions 中的 <code>config.yml</code></h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">Python</span> <span class="string">application</span></span><br><span class="line"></span><br><span class="line"><span class="attr">on:</span></span><br><span class="line">  <span class="attr">workflow_dispatch:</span></span><br><span class="line">  <span class="attr">schedule:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">cron:</span> <span class="string">&#x27;30 0-23 * * *&#x27;</span></span><br><span class="line">  <span class="attr">push:</span></span><br><span class="line"></span><br><span class="line"><span class="attr">permissions:</span> <span class="string">write-all</span></span><br><span class="line"></span><br><span class="line"><span class="attr">env:</span></span><br><span class="line">  <span class="attr">GITHUB_TOKEN:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUB_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build:</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/checkout@v3</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">uses:</span> <span class="string">actions/setup-python@v4</span></span><br><span class="line">      <span class="attr">with:</span></span><br><span class="line">        <span class="attr">python-version:</span> <span class="string">&#x27;3.9&#x27;</span></span><br><span class="line">        <span class="attr">cache:</span> <span class="string">&#x27;pip&#x27;</span></span><br><span class="line">        <span class="attr">cache-dependency-path:</span> <span class="string">&#x27;requirements.txt&#x27;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">run:</span> <span class="string">pip</span> <span class="string">install</span> <span class="string">-r</span> <span class="string">requirements.txt</span></span><br><span class="line"></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">tree</span></span><br><span class="line">      <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">        tree</span></span><br><span class="line"><span class="string"></span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Run</span> <span class="string">main</span></span><br><span class="line">      <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">        git pull</span></span><br><span class="line"><span class="string">        cat config.txt</span></span><br><span class="line"><span class="string">        python main.py</span></span><br><span class="line"><span class="string">        cat config.txt</span></span><br><span class="line"><span class="string"></span>    </span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Commit</span> <span class="string">files</span></span><br><span class="line">      <span class="attr">run:</span> <span class="string">|</span></span><br><span class="line"><span class="string">        git init</span></span><br><span class="line"><span class="string">        git config --local user.email &quot;l921832312@qq.com&quot;</span></span><br><span class="line"><span class="string">        git config --local user.name &quot;Jayliu9218&quot;</span></span><br><span class="line"><span class="string">        ls</span></span><br><span class="line"><span class="string">        git add info.txt config.txt</span></span><br><span class="line"><span class="string">        git commit -m &quot;AUTO&quot;</span></span><br><span class="line"><span class="string"></span>        </span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Push</span> <span class="string">changes</span></span><br><span class="line">      <span class="attr">uses:</span> <span class="string">ad-m/github-push-action@master</span></span><br><span class="line">      <span class="attr">with:</span></span><br><span class="line">        <span class="attr">github_token:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.GITHUB_TOKEN</span> <span class="string">&#125;&#125;</span></span><br><span class="line">        <span class="attr">branch:</span> <span class="string">$&#123;&#123;</span> <span class="string">github.ref</span> <span class="string">&#125;&#125;</span></span><br><span class="line">        </span><br></pre></td></tr></table></figure><p><a href="https://github.com/Jayliu9218/Mail-Reminder-by-Transfer">more info</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;能做什么？&quot;&gt;&lt;a href=&quot;#能做什么？&quot; class=&quot;headerlink&quot; title=&quot;能做什么？&quot;&gt;&lt;/a&gt;能做什么？&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;自动登录交大邮箱，由上一时刻保存的邮件数与此时刻的邮件数对比，判断有无新邮件；&lt;/li&gt;
+&lt;li&gt;如果“</summary>
+      
+    
+    
+    
+    
+    <category term="Python" scheme="https://jayliu9218.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://jayliu9218.github.io/2023/10/28/hello-world/"/>
+    <id>https://jayliu9218.github.io/2023/10/28/hello-world/</id>
+    <published>2023-10-28T12:36:47.446Z</published>
+    <updated>2023-10-28T12:36:47.446Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Build of Thermal Loop</title>
+    <link href="https://jayliu9218.github.io/2023/05/23/Thermal%20Loop/"/>
+    <id>https://jayliu9218.github.io/2023/05/23/Thermal%20Loop/</id>
+    <published>2023-05-23T07:56:15.000Z</published>
+    <updated>2023-10-30T14:38:36.156Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="部分做功"><a href="#部分做功" class="headerlink" title="部分做功"></a>部分做功</h1><p>压气机做功</p><p>W_IN1<br>$$<br>P_5 &#x3D; P_{21} &#x3D; P_{30} &#x3D; P_{6} &#x3D; P_{7} &#x3D; P_{17} &#x3D; P_{8}<br>\<br>P_4 &#x3D; P_{2} &#x3D; P_{1} &#x3D; P_{11} &#x3D; P_{10} &#x3D; P_{34} &#x3D; P_{33}<br>\<br>T_4 &#x3D; T_4<br>\<br>s(P_5,T_5) &#x3D; s(P_4,T_4)&#x2F;ISEN \to T_5<br>\<br>W_{IN1} &#x3D; S_4S_5(1-S_1)<em>(h_5-h_4)<br>$$<br>W_IN8<br>$$<br>P_{20} &#x3D; P_{38} &#x3D; P_{12} &#x3D; P_{7} &#x3D; P_{17} &#x3D; P_{8}<br>\<br>P_{3} &#x3D; P_{31} &#x3D; P_{1} &#x3D; P_{11} &#x3D; P_{10} &#x3D; P_{34} &#x3D; P_{33}<br>\<br>T_{20} &#x3D; T_{38} &#x3D; T_{12} &#x3D; T_{6}<br>\<br>s(P_{20},T_{20}) &#x3D; s(P_3,T_3)&#x2F;ISEN \to T_3<br>\<br>W_{IN8} &#x3D; S_4S_5S_1</em>(h_{20}-h_3)<br>$$<br>W_IN11<br>$$<br>P_{22} &#x3D; P_{35} &#x3D; P_{8}<br>\<br>P_{16} &#x3D; P_{14} &#x3D; P_{13}<br>\<br>T_{22} &#x3D; T_{35} &#x3D; T_{8}<br>\<br>s(P_{22},T_{22}) &#x3D; s(P_{16},T_{16})&#x2F;ISEN \to T_{16}<br>\<br>W_{IN11} &#x3D; (1-S_4)<em>(h_{22}-h_{16})<br>$$<br>W_IN17<br>$$<br>P_{27} &#x3D; P_{35} &#x3D; P_{8}<br>\<br>P_{29} &#x3D; P_{26} &#x3D; P_{37} &#x3D; P_{25}<br>\<br>T_{27} &#x3D; T_{35} &#x3D; T_{8}<br>\<br>s(P_{29},T_{29}) &#x3D; s(P_{27},T_{27})&#x2F;ISEN \to T_{29}<br>\<br>W_{IN11} &#x3D; S_4(1-S_5)</em>(h_{27}-h_{29})<br>$$<br>W_OUT<br>$$<br>P_{13} &#x3D; P_{13}<br>\<br>P_{9} &#x3D; P_{9}<br>\<br>T_{9} &#x3D; T_{9}<br>\<br>s(P_{13},T_{13}) &#x3D; s(P_{9},T_{9})&#x2F;ISEN \to T_{13}<br>\<br>W_{OUT12} &#x3D; 1*(h_{9}-h_{13})<br>\<br>P_{15} &#x3D; P_{13}<br>\<br>T_{15} &#x3D; T_{13}<br>\<br>P_{25} &#x3D; P_{25}<br>\<br>s(P_{25},T_{25}) &#x3D; s(P_{15},T_{15})&#x2F;ISEN \to T_{25}<br>\<br>W_{OUT14} &#x3D; S_4*(h_{15}-h_{25})<br>\<br>P_{36} &#x3D; P_{25}<br>\<br>T_{36} &#x3D; T_{25}<br>\<br>P_{33} &#x3D; P_{33}<br>\<br>s(P_{33},T_{33}) &#x3D; s(P_{36},T_{36})&#x2F;ISEN \to T_{33}<br>\<br>W_{OUT18} &#x3D; S_4S_5*(h_{36}-h_{33})<br>$$</p><h1 id="程序设计思路"><a href="#程序设计思路" class="headerlink" title="程序设计思路"></a>程序设计思路</h1><p>程序设计思路</p><ol><li>验证程序<ol><li>简单循环</li><li>再压缩循环</li></ol></li><li>主程序<ol><li>根据循环流程图构建回路矩阵</li><li>设定部分参数</li><li>根据设备工作的物理过程解算剩余参数</li><li>计算设备功率及效率</li><li>检查与校正</li></ol></li><li>参数分析<ol><li>分流系数<ol><li>选择某个分流系数进行随机调整</li><li>运行主程序</li></ol></li><li>初始状态参数<ol><li>选择某个初始状态参数进行随机调整</li><li>运行主程序</li></ol></li></ol></li><li>GA<ol><li>分流系数<ol><li>将分流系数表设为种群个体基因</li><li>设置遗传算法基础参数，设置效率为适应度函数</li><li>运行主程序，迭代</li></ol></li><li>初始状态参数<ol><li>将初始状态参数设为种群个体基因</li><li>设置遗传算法基础参数，设置效率为适应度函数</li><li>运行主程序，迭代</li></ol></li><li>全变量<ol><li>将分流系数表、初始状态参数设为种群个体基因</li><li>设置遗传算法基础参数，设置效率为适应度函数</li><li>运行主程序，迭代</li></ol></li></ol></li></ol><h1 id="LOOP"><a href="#LOOP" class="headerlink" title="LOOP"></a>LOOP</h1><h2 id="code-of-loop"><a href="#code-of-loop" class="headerlink" title="code of loop"></a>code of loop</h2><p>xxx-apparatus</p><p>000-split on</p><p>001-turbine&#x2F;compressor</p><p>010-spliter</p><p>011-reheater-xxx-encrypt from 001 to 110 (6 might be enough)</p><p>100-exheater&#x2F;cooler&#x2F;heater</p><p>101-mixer</p><p>110-pipe</p><p>111-split off</p><h2 id="example"><a href="#example" class="headerlink" title="example"></a>example</h2><p>001-011001-100-001011-001-100</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;部分做功&quot;&gt;&lt;a href=&quot;#部分做功&quot; class=&quot;headerlink&quot; title=&quot;部分做功&quot;&gt;&lt;/a&gt;部分做功&lt;/h1&gt;&lt;p&gt;压气机做功&lt;/p&gt;
+&lt;p&gt;W_IN1&lt;br&gt;$$&lt;br&gt;P_5 &amp;#x3D; P_{21} &amp;#x3D; P_{30} &amp;#</summary>
+      
+    
+    
+    
+    
+    <category term="Nuclear" scheme="https://jayliu9218.github.io/tags/Nuclear/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Me</title>
+    <link href="https://jayliu9218.github.io/2023/05/23/Me/"/>
+    <id>https://jayliu9218.github.io/2023/05/23/Me/</id>
+    <published>2023-05-23T07:56:15.000Z</published>
+    <updated>2023-10-30T14:36:32.546Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2023-5-23"><a href="#2023-5-23" class="headerlink" title="2023.5.23"></a>2023.5.23</h1><p>连着看了好几天电影，《海边的曼彻斯特》，《心灵捕手》，《时空恋旅人》，《遇见你之前》</p><p>对于之前的一段恋爱，我经常会感到很难过，因为我们本可以，或者说almost in deep love……</p><p>我以为这会是一段很深刻的恋爱，至少在厦门趴着栏杆互相倾诉，你看向我的时候，我感觉那一刻就是永恒。从你的眼睛里，我看到了你的内心，看到了我自己，看到了世界，甚至看到了停摆的时钟。我不知道怎么去形容那个眼神，真诚的泪光像温柔的尖刀，出现的一瞬间便将我杀死了，彻彻底底地。</p><p>在看到《心灵捕手》里面，女主对男主说 I love you，想要一个确定的答复而男主疯狂发飙的时候，很想和你道歉，很抱歉之前的一些想法行为让你困惑、难过。我觉得之前你说的很对，我可能真的有一点精神上的疾病，虽然还没有确诊，事实上也是从来没有去正规医生诊断过，或者说是很害怕确诊之后的待遇，诸如药物治疗、被关进精神病院之类。看电影的时候就深深地共情，常常自作聪明，自负骄傲，因为家庭原因内心自卑到很深很深处，但我不是男主，更没有男主的本事。我也很希望遇到肖恩那样的人生导师，他真的太懂我了，“察觉到别人可能会离开，就先一步把人赶走”，爱人却不知道如何入手，过度自尊又不希望被伤害。</p><p>我有时候会想，是不是找到另一个人，开始一段新的恋爱，一切就都会慢慢好起来。</p><p>可是事实是，我连和别人说话都不太想。可能因为活动认识了其他同学，却也只是寥寥几句，没几天便彻底没了联系。Maybe I just can’t feel love anymore. 很难过，却也远没有曼彻斯特的李难过，但我也不是男主，没有天才的大脑或者是穿越时空的能力。放在人群里，我只是个普通人。我只是我。</p><p>遇见你之前，我就已经开始慢慢坠落，”所遇见的你，是我坠落过程中看见的一束光，可惜却并不能阻止我下坠“，更何况这束光也逐渐消失了。</p><h1 id="2023-6-14"><a href="#2023-6-14" class="headerlink" title="2023.6.14"></a>2023.6.14</h1><p>突然意识到自己的“自私”：根据老师复习课的提示整理了复习笔记，但并不是很愿意分享给班级里的同学，甚至是同寝室同专业的同学。</p><p>因为我觉得，大学不像高中，大学的竞争中人少，而高中的人太多了。要是放在高中，我一定会积极分享自己的复习笔记、提纲要领之类的，多一些人知道（明确的说是多一些“自己人”知道）也没有什么大不了，就像高考排名1和51，二者有什么区别吗？可以说几乎没有。并且这个过程还可以和同学相互交流，查漏补缺。但是在大学，排名1和51的区别可就大了，别说51，就是11那也可能是保研危险线。</p><p>总体而言，高中的学习虽有竞争，但是在一个班级里，合作的成分还是更多；大学虽然也有合作（小组作业？），但绝对已经属于社会化的竞争了，任何分享，或者说有利于提高竞争对手的做法，对自己而言都是危险的。对此，我有三种计策：</p><p>1.事不关己，毫不理睬；</p><p>2.处处留一手，让对手猜不透；</p><p>3.让自己足够强大，分享给对手对自己也没有什么影响。</p><p>为免麻烦事端，我也不是强者，还是什么都不说的罢。沉默啊沉默。</p><h1 id="2023-6-14-1"><a href="#2023-6-14-1" class="headerlink" title="2023.6.14"></a>2023.6.14</h1><p>我不明白自己为什么老是想起你，可能是因为你确实太好了，也可能是遗憾“那段时期”我的无能懦弱。</p><p>关于“那段时期”，我想到一部书：《霍乱时期的爱情》。在那段特殊的时期，我们想见却不能见，相隔着一千多公里，能安慰彼此的只有这头那头的电话线。在学习烦躁的时候，在生活不如意的时候，在无数个看到美景趣事想要和你分享、与拥抱的时候，我什么都做不到，只能一遍又一遍地发送表情包。我知道，我明白，我确信你肯定能理解我当时的心情，但屏幕中那些表情包和文字比起我内心的激动，还是差了一千一万倍。我知道，我明白，我确信你也是如此。</p><p>我想见你，一千一万遍地想，翻来覆去地想，可是我又什么都做不到。提前一个月订好了机票，却因为登机前两三天的风控管理而作罢。我无奈。我向你写信、寄信，用一千一万倍的真心写下我的思念与痛苦。满心期待着回信却不知寄出的信散落何方。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;2023-5-23&quot;&gt;&lt;a href=&quot;#2023-5-23&quot; class=&quot;headerlink&quot; title=&quot;2023.5.23&quot;&gt;&lt;/a&gt;2023.5.23&lt;/h1&gt;&lt;p&gt;连着看了好几天电影，《海边的曼彻斯特》，《心灵捕手》，《时空恋旅人》，《遇见你之前》</summary>
+      
+    
+    
+    
+    
+    <category term="Miscellaneous" scheme="https://jayliu9218.github.io/tags/Miscellaneous/"/>
+    
+  </entry>
+  
+</feed>
